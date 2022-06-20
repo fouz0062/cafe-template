@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #099;
+    font-family: 'Charm', cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.bgvideo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.leftside {
+    width: 30%;
+    position: fixed;
+    margin: 1rem 1.5rem;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: #fff;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+.grid>div {
+    background-color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1.5rem 0.5rem;
+}
+
+.grid>div:first-child,
+.grid>div:nth-child(3) {
+    margin: 0.5rem 0;
+    margin-right: 0.5rem;
+}
+
+.grid>div:nth-child(2),
+.grid>div:nth-child(4) {
+    margin: 0.5rem 0;
+    margin-left: 0.5rem;
+}
+
+.grid>div>a i {
+    padding-right: 10px;
+}
+
+.grid>div:hover {
+    background-color: #099;
+}
+
+.grid>div:hover a,
+.grid>div:hover i {
+    color: #fff;
+}
+
+.footer {
+    position: fixed;
+    z-index: 1;
+    bottom: 5%;
+    left: 2%;
+}
+
+.footer div {
+    font-size: 1.3rem;
+    color: #fff;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.rightside {
+    position: relative;
+    left: 70%;
+    margin: 1rem auto;
+    width: 80%;
+}
+
+.cftitle {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+    font-weight: bold;
+}
+
+.cftitle>div {
+    width: 33.333333333%;
+    color: #fff;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 1rem;
+}
+
+.cftitle>div a:active,
+.cftitle>div a:visited,
+.cftitle>div a:hover {
+    border-bottom: 3px solid white;
+}
+
+.beverage {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.beverage>div {
+    margin-top: 1rem;
+}
+
+
+/*
+.beverage>div>img {
+    float: left;
+} */
+
+.beverage>div>div:nth-child(2) {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 75%;
+    margin-left: auto;
+}
+
+.flex2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex2>div:first-child {
+    width: 20%;
+}
+
+.flex2>div:nth-child(2) {
+    width: 80%;
+    color: #fff;
+    margin-bottom: 6px;
+}
+
+.flex2>div:nth-child(2) h4 {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 15px;
+}
+
+.flex2>div:nth-child(2) span {
+    font-size: 1.5rem;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.flex2>div:nth-child(2) p {
+    color: #fff;
+    font-size: 1rem;
+    margin-left: 15px;
+    text-align: left;
+}
+
+@media only screen and (max-width:575px) {
+    .leftside {
+        width: 90%;
+        position: relative;
+        margin: 1rem auto;
+    }
+    .grid {
+        grid-template-columns: 50% 50%;
+    }
+    .grid>div {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+    .logo {
+        font-size: 2rem;
+        padding: 10px;
+    }
+    .rightside {
+        left: 0;
+        width: 90%;
+        margin-bottom: 4rem;
+    }
+    .cftitle {
+        margin: 0;
+    }
+    .cftitle>div {
+        width: 33.33333%;
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+    .flex2>div:first-child {
+        text-align: center;
+        width: 100%;
+    }
+    .beverage>div>div:nth-child(2) {
+        width: 100%;
+        margin-bottom: 0;
+        padding: 5px 0;
+    }
+    .flex2>div:nth-child(2) span {
+        display: block;
+    }
+    .flex2>div:nth-child(2) h4,
+    .flex2>div:nth-child(2) p,
+    .flex2>div:nth-child(2) span {
+        text-align: center;
+        font-size: 1rem;
+    }
+    .flex2>div:nth-child(2) h4 {
+        font-size: 1.5rem;
+    }
+    .footer {
+        z-index: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .footer>div {
+        font-size: 1rem;
+    }
+}

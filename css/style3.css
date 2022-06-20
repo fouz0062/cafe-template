@@ -1,0 +1,65 @@
+.specialright {
+    position: relative;
+    left: 35%;
+    width: 70%;
+    margin: 1rem 0;
+}
+
+.splgrid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.splgrid>div {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.splgrid>div img {
+    width: 100%;
+}
+
+.splgrid>div div {
+    margin: 1rem auto;
+}
+
+.splgrid>div div h4 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.splgrid>div div p {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0.8rem auto;
+}
+
+@media only screen and (max-width:576px) {
+    .specialright {
+        left: 0;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+    }
+    .splgrid {
+        grid-template-columns: 100%;
+    }
+    .splgrid>div {
+        margin: 1rem auto;
+    }
+    .splgrid>div div h4 {
+        font-size: 1.2rem;
+    }
+    .splgrid>div div p {
+        font-size: 1rem;
+        padding: 0 5px;
+    }
+    .splgrid>div div {
+        margin: 0.5rem auto;
+    }
+}
